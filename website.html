@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Website</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #0b0f19;
+            color: white;
+        }
+
+        /* NAVIGATION */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(11, 15, 25, 0.9);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .logo span {
+            color: #00d9ff;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #00d9ff;
+        }
+
+        /* HERO */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 100px 20px 40px;
+            background:
+                radial-gradient(circle at center, #102b45 0%, #0b0f19 55%);
+        }
+
+        .hero-content {
+            max-width: 800px;
+        }
+
+        .hero h1 {
+            font-size: clamp(45px, 8vw, 90px);
+            margin-bottom: 20px;
+        }
+
+        .hero h1 span {
+            color: #00d9ff;
+        }
+
+        .hero p {
+            font-size: 20px;
+            color: #b8c0cc;
+            line-height: 1.6;
+            margin-bottom: 35px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 14px 28px;
+            background: #00d9ff;
+            color: #061018;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .button:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 30px rgba(0, 217, 255, 0.3);
+        }
+
+        /* SECTIONS */
+        section {
+            padding: 100px 8%;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 40px;
+            margin-bottom: 50px;
+        }
+
+        .section-title span {
+            color: #00d9ff;
+        }
+
+        /* ABOUT */
+        .about {
+            max-width: 900px;
+            margin: auto;
+            text-align: center;
+        }
+
+        .about p {
+            color: #b8c0cc;
+            line-height: 1.8;
+            font-size: 18px;
+        }
+
+        /* PROJECTS */
+        .projects {
+            background: #080c14;
+        }
+
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .project-card {
+            padding: 30px;
+            background: #111827;
+            border: 1px solid #263244;
+            border-radius: 15px;
+            transition: 0.3s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-8px);
+            border-color: #00d9ff;
+        }
+
+        .project-card h3 {
+            margin-bottom: 15px;
+            color: #00d9ff;
+        }
+
+        .project-card p {
+            color: #aeb7c5;
+            line-height: 1.6;
+        }
+
+        /* SKILLS */
+        .skills-container {
+            max-width: 900px;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .skill {
+            padding: 14px 22px;
+            border: 1px solid #263244;
+            border-radius: 30px;
+            background: #111827;
+            transition: 0.3s;
+        }
+
+        .skill:hover {
+            background: #00d9ff;
+            color: #061018;
+        }
+
+        /* CONTACT */
+        .contact {
+            text-align: center;
+            background: #080c14;
+        }
+
+        .contact p {
+            color: #b8c0cc;
+            margin-bottom: 30px;
+        }
+
+        /* FOOTER */
+        footer {
+            text-align: center;
+            padding: 25px;
+            background: #05070c;
+            color: #788292;
+        }
+
+        /* MOBILE */
+        @media (max-width: 700px) {
+            nav {
+                padding: 18px 5%;
+            }
+
+            nav ul {
+                gap: 12px;
+                font-size: 14px;
+            }
+
+            section {
+                padding: 80px 5%;
+            }
+
+            .hero p {
+                font-size: 17px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <nav>
+        <div class="logo">My<span>Website</span></div>
+
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- HOME -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+
+            <h1>Hello, I'm <span>Jones</span></h1>
+
+            <p>
+                Welcome to my personal website.
+                This is where I share my projects,
+                skills, and things I'm working on.
+            </p>
+
+            <a href="#projects" class="button">
+                View My Projects
+            </a>
+
+        </div>
+    </section>
+
+
+    <!-- ABOUT -->
+    <section id="about">
+
+        <h2 class="section-title">
+            About <span>Me</span>
+        </h2>
+
+        <div class="about">
+
+            <p>
+                Welcome to my website! I'm interested in technology,
+                programming, and creating projects. I'm currently
+                learning and building different things while improving
+                my skills.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- PROJECTS -->
+    <section class="projects" id="projects">
+
+        <h2 class="section-title">
+            My <span>Projects</span>
+        </h2>
+
+        <div class="project-grid">
+
+            <div class="project-card">
+                <h3>Project One</h3>
+                <p>
+                    A project I'm currently working on.
+                    More information will be added here.
+                </p>
+            </div>
+
+            <div class="project-card">
+                <h3>Project Two</h3>
+                <p>
+                    Another project that I created
+                    using programming and web technologies.
+                </p>
+            </div>
+
+            <div class="project-card">
+                <h3>Project Three</h3>
+                <p>
+                    A future project that will be
+                    added to my website.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- SKILLS -->
+    <section id="skills">
+
+        <h2 class="section-title">
+            My <span>Skills</span>
+        </h2>
+
+        <div class="skills-container">
+
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">JavaScript</div>
+            <div class="skill">C++</div>
+            <div class="skill">Java</div>
+            <div class="skill">GitHub</div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+
+        <h2 class="section-title">
+            Contact <span>Me</span>
+        </h2>
+
+        <p>
+            Want to get in touch? Send me a message.
+        </p>
+
+        <a href="mailto:your@email.com" class="button">
+            Email Me
+        </a>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2026 My Website. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
