@@ -1,56 +1,676 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
-<meta name="description" content="Personal portfolio of Jones Olapani Tuplano">
-<title>Jones Tuplano | Portfolio</title><link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-<header class="hero" id="home">
-<nav>
-<button class="nav-btn" data-target="home">Home</button><button class="nav-btn" data-target="about">About</button>
-<button class="nav-btn" data-target="skills">Skills</button><button class="nav-btn" data-target="projects">Projects</button>
-<button class="nav-btn" data-target="achievements">Achievements</button><button class="nav-btn" data-target="interests">Interests</button><button class="nav-btn" data-target="contact">Contact</button>
-</nav>
-<div class="hero-content"><p class="tag">BS COMPUTER SCIENCE STUDENT</p><h1>Jones Olapani Tuplano</h1>
-<p class="intro">Learning code, building projects, and improving one step at a time.</p>
-<div class="hero-buttons"><button class="main-btn" data-expand="about-card">About Me ↓</button><button class="main-btn outline" data-expand="projects-card">View Projects ↓</button></div></div>
+
+<div class="background">
+    <div class="blob blob1"></div>
+    <div class="blob blob2"></div>
+</div>
+
+<header class="top-header">
+
+    <div class="brand">
+        <div class="brand-icon">✦</div>
+
+        <div>
+            <p class="small-title">Portfolio</p>
+            <h1>Jones Olapani Tuplano</h1>
+        </div>
+    </div>
+
+    <button id="settingsBtn" class="settings-btn">
+        ⚙
+    </button>
+
 </header>
+
+
 <main>
-<section id="about" class="section"><div class="section-title"><span>01</span><h2>About Me</h2></div>
-<button class="expand-card" data-expand="about-card"><strong>Who am I?</strong><span>＋</span></button>
-<div id="about-card" class="hidden-panel"><p>I am currently a student at Catanduanes State University taking Bachelor of Science in Computer Science. I know enough about coding to continue learning and improving my skills. I am interested in technology and enjoy learning new things about computer science.</p>
-<div class="info-grid"><div><b>School</b><br>Catanduanes State University</div><div><b>Course</b><br>Bachelor of Science in Computer Science</div><div><b>Status</b><br>Student</div><div><b>Birth Date</b><br>February 1, 2007</div><div><b>Civil Status</b><br>Single</div><div><b>Location</b><br>Burgos, Viga, Catanduanes</div></div></div></section>
 
-<section id="skills" class="section"><div class="section-title"><span>02</span><h2>Skills</h2></div>
-<button class="expand-card" data-expand="skills-card"><strong>What can I do?</strong><span>＋</span></button>
-<div id="skills-card" class="hidden-panel"><div class="skill-list">
-<button class="skill-item" data-expand="skill-code">Basic Coding <span>＋</span></button><div id="skill-code" class="mini-panel">I have basic coding knowledge and continue practicing to improve.</div>
-<button class="skill-item" data-expand="skill-learn">Continuous Learning <span>＋</span></button><div id="skill-learn" class="mini-panel">I am willing to learn new programming concepts and technologies.</div>
-<button class="skill-item" data-expand="skill-problem">Problem Solving <span>＋</span></button><div id="skill-problem" class="mini-panel">I practice solving programming problems and learning from mistakes.</div>
-</div></div></section>
+    <!-- HERO -->
+    <section class="hero">
 
-<section id="projects" class="section"><div class="section-title"><span>03</span><h2>Projects</h2></div>
-<button class="expand-card featured" data-expand="projects-card"><strong>My Projects</strong><span>＋</span></button>
-<div id="projects-card" class="hidden-panel">
-<article class="project"><div class="project-number">01</div><div><h3>My Personal Portfolio Website</h3><p>A personal website created to introduce myself, show my skills, achievements, experiences, interests, and future projects.</p><button class="small-btn" data-message="Project 1 is my personal portfolio website. Projects 2 and 3 can be added later.">Project Details</button></div></article>
-<article class="project placeholder"><div class="project-number">02</div><div><h3>Project Coming Soon</h3><p>I will add my second project here later.</p></div></article>
-<article class="project placeholder"><div class="project-number">03</div><div><h3>Project Coming Soon</h3><p>I will add my third project here later.</p></div></article>
-</div></section>
+        <div class="hero-text">
 
-<section id="achievements" class="section"><div class="section-title"><span>04</span><h2>Achievements & Experiences</h2></div>
-<button class="expand-card" data-expand="achievements-card"><strong>Open my journey</strong><span>＋</span></button>
-<div id="achievements-card" class="hidden-panel"><div class="two-col"><div><h3>Achievements</h3><ul><li>Graduated high school</li><li>Completed NSTP training</li><li>Passed 1st year of Computer Science</li></ul></div><div><h3>Experiences</h3><ul><li>Worked at the Municipal Office of Viga through SPES to gain early work experience</li><li>Personal experience overcoming difficult situations, including COVID-19 and a motorcycle accident</li></ul></div></div></div></section>
+            <p class="welcome"></p>
 
-<section id="interests" class="section"><div class="section-title"><span>05</span><h2>Interests</h2></div>
-<button class="expand-card" data-expand="interests-card"><strong>Things I enjoy</strong><span>＋</span></button>
-<div id="interests-card" class="hidden-panel interest-grid"><button data-message="You enjoy playing online games.">🎮 Online Games</button><button data-message="Chess is one of your hobbies.">♟ Chess</button><button data-message="You sometimes enjoy cooking.">🍳 Cooking</button></div></section>
+            <h2>
+                My 
+                <span>Portfolio</span>
+            </h2>
 
-<section id="contact" class="section"><div class="section-title"><span>06</span><h2>Contact</h2></div>
-<button class="expand-card" data-expand="contact-card"><strong>Let's connect</strong><span>＋</span></button>
-<div id="contact-card" class="hidden-panel"><p>Email me at:</p><a class="email" href="mailto:jonestuplano8@gmail.com">jonestuplano8@gmail.com</a><br><button class="small-btn" id="copyEmail">Copy Email</button></div></section>
+            <p class="hero-description">
+                This portfolio contains some information about myself.
+            </p>
+
+            <div class="hero-buttons">
+
+                <button class="main-btn" id="aboutBtn">
+                    👤 About Me
+                </button>
+
+                <button class="secondary-btn" id="projectsBtn">
+                    🚀 View Projects
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <div class="hero-card">
+
+            <div class="card-decoration">✦</div>
+
+            <div class="profile-circle">
+                👨‍💻
+            </div>
+
+            <h3></h3>
+
+            <p>Student • Learner • Future Programmer</p>
+
+            <div class="status">
+                <span></span>
+                Student nganiii
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- MIDTERM INFORMATION -->
+    <section class="section">
+
+        <div class="section-heading">
+
+<div class="section-heading">
+
+    <h2>About me</h2>
+</div>
+
+        </div>
+
+
+        <div class="info-grid">
+
+
+            <!-- PERSONAL INFORMATION -->
+            <div class="info-box">
+
+                <button class="box-header">
+
+                    <div class="box-title">
+
+                        <div class="box-icon">👤</div>
+
+                        <div>
+                            <h3>Personal Information</h3>
+                            <p>bawal tabi gamiton kung sain sain</p>
+                        </div>
+
+                    </div>
+
+                    <span class="plus">+</span>
+
+                </button>
+
+
+                <div class="box-content">
+
+                    <div class="info-row">
+                        <span>Full Name</span>
+                        <strong>Jones Olapani Tuplano</strong>
+                    </div>
+
+                     <div class="info-row">
+                        <span>Address</span>
+                        <strong>Burgos,Viga, Catanduanes</strong>
+                    </div>
+
+                   <div class="info-row">
+                        <span>Birthday</span>
+                        <strong>February 1,2007</strong>
+                    </div>
+
+                 <div class="info-row">
+                        <span>Sex</span>
+                        <strong>Male</strong>
+                    </div>
+
+                    <div class="info-row">
+                        <span>Age</span>
+                        <strong>19 Years Old</strong>
+                    </div>
+
+                    
+
+                </div>
+
+            </div>
+
+
+            <!-- EDUCATION -->
+            <div class="info-box">
+
+                <button class="box-header">
+
+                    <div class="box-title">
+
+                        <div class="box-icon">🎓</div>
+
+                        <div>
+                            <h3>Education</h3>
+                            <p>Saan gaadar</p>
+                        </div>
+
+                    </div>
+
+                    <span class="plus">+</span>
+
+                </button>
+
+
+                <div class="box-content">
+
+                    <div class="info-row">
+                        <span>School</span>
+                        <strong>Catanduanes State University</strong>
+                    </div>
+
+                    <div class="info-row">
+                        <span>School Address</span>
+                        <strong>Calatagan Proper,Virac</strong>
+                    </div>
+
+<div class="info-row">
+                        <span>Course</span>
+                        <strong>Bachelor of Science in Computer Science</strong>
+                    </div>
+
+                    <div class="info-row">
+                        <span>Year Level</span>
+                        <strong>2nd Year</strong>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+<!-- SKILLS -->
+<div class="info-box">
+
+    <button class="box-header">
+
+        <div class="box-title">
+
+            <div class="box-icon">💡</div>
+
+            <div>
+                <h3>Skills</h3>
+                <p>nu daw?</p>
+            </div>
+
+        </div>
+
+        <span class="plus">+</span>
+
+    </button>
+
+    <div class="box-content">
+            <p>C<br>C++<b><br>OOP</b></p>
+        <!-- Add your skills here later -->
+
+    </div>
+
+</div>
+
+            </div>
+
+
+            <!-- SUBJECTS -->
+            <div class="info-box">
+
+                <button class="box-header">
+
+                    <div class="box-title">
+
+                        <div class="box-icon">🧭</div>
+
+                        <div>
+                            <h3>Experiences</h3>
+                            <p>happenings in life</p>
+                        </div>
+
+                    </div>
+
+                    <span class="plus">+</span>
+
+                </button>
+
+
+                <div class="box-content">
+
+                    <div class="subject">
+                        </span>🏍️</span>
+
+                        <div>
+                            <strong>Motorcycle crash</strong>
+                            <small></small>
+                        </div>
+                    </div>
+
+
+                    <div class="subject">
+                        <span>👔</span>
+
+                        <div>
+                            <strong>Worked at Municipal Office</strong>
+                            <small></small>
+                        </div>
+                    </div>
+
+
+                   
+
+                </div>
+
+            </div>
+
+
+            <!-- ACHIEVEMENTS -->
+            <div class="info-box">
+
+                <button class="box-header">
+
+                    <div class="box-title">
+
+                        <div class="box-icon">🏆</div>
+
+                        <div>
+                            <h3>Achievements</h3>
+                            <p>22o</p>
+                        </div>
+
+                    </div>
+
+                    <span class="plus">+</span>
+
+                </button>
+
+
+                <div class="box-content">
+
+                    <div class="achievement">
+
+                        <span>🏆</span>
+
+                        <div>
+                            <strong>Passed 1st Year in BSCS</strong>
+                            </small></small>
+                        </div>
+
+                    </div>
+
+
+                    <div class="achievement">
+
+                        <span>⭐</span>
+
+                        <div>
+                            <strong>Game Achievements</strong>
+                            <small>Reach Glory in MLBB <br>100% Stardew Valley Community Route<br>Beaten Terraria getfixedboi seed and 100% Bestiary</small>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- CONTACT -->
+            <div class="info-box">
+
+                <button class="box-header">
+
+                    <div class="box-title">
+
+                        <div class="box-icon">📩</div>
+
+                        <div>
+                            <h3>Contact & Inquiries</h3>
+                            <p>Fb pm nalang tabi</p>
+                        </div>
+
+                    </div>
+
+                    <span class="plus">+</span>
+
+                </button>
+
+
+                <div class="box-content contact-content">
+
+                    <div class="contact-item">
+
+                        <div class="contact-symbol">📧</div>
+
+                        <div>
+                            <small>Gmail</small>
+                            <strong>jonestuplano8@gmail.com</strong>
+                        </div>
+
+                    </div>
+
+
+                    <div class="contact-item">
+
+                        <div class="contact-symbol">📱</div>
+
+                        <div>
+                            <small>Phone</small>
+                            <strong>09074525924</strong>
+                        </div>
+
+                    </div>
+
+
+                    <div class="contact-item">
+
+                        <div class="contact-symbol">📘</div>
+
+                        <div>
+                            <small>Facebook</small>
+                            <strong>Jones O. Tupano</strong>
+                        </div>
+
+                    </div>
+
+
+                    <div class="contact-item">
+
+                        <div class="contact-symbol">📍</div>
+
+                        <div>
+                            <small>Location</small>
+                            <strong>Varies everyday</strong>
+                        </div>
+
+                    </div>
+
+
+                    <div class="inquiry-message">
+                        For inquiries, projects, collaborations,
+                        or questions, feel free to contact me
+                        through any of the information above.Pls don't
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- PROJECTS -->
+    <section class="projects-section" id="projects">
+
+        <div class="section-heading">
+
+            <div>
+                <p class="section-label"></p></p>
+                <h2>Projects</h2>
+            </div>
+
+        </div>
+
+
+        <div class="projects-grid">
+
+            <div class="project-card">
+                <div class="project-icon">💻</div>
+                <h3>Project 1</h3>
+                <p>Portfolio</p>
+            </div>
+
+
+            <div class="project-card">
+                <div class="project-icon">🎮</div>
+                <h3>Project 2</h3>
+                <p>Probably Game</p>
+            </div>
+
+
+            <div class="project-card">
+                <div class="project-icon">❔</div>
+                <h3>Project 3</h3>
+                <p>NA</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CONTACT BUTTON -->
+    <section class="contact-cta">
+
+        <div>
+
+            <p class="section-label">HAVE A QUESTION?</p>
+
+            <h2>Let's Connect</h2>
+
+            <p>
+                For inquiries and other concerns,
+                you can reach me through my contact information.
+            </p>
+
+        </div>
+
+        <button id="contactBtn" class="main-btn">
+            📩 Contact Me
+        </button>
+
+    </section>
+
 </main>
-<footer><p>© 2026 Jones Olapani Tuplano</p><button id="topBtn">↑ Back to Top</button></footer>
-<div id="toast" class="toast" aria-live="polite"></div>
+
+
+<footer>
+
+    <p>© 2026 Tuplano x CHATGPT</p>
+
+    <p>Piracy is prohibited</p>
+
+</footer>
+
+
+<!-- SETTINGS -->
+
+<div class="settings-overlay" id="settingsOverlay">
+
+    <div class="settings-panel">
+
+        <button class="close-settings" id="closeSettings">
+            ×
+        </button>
+
+
+        <div class="settings-title">
+
+            <span>⚙</span>
+
+            <div>
+                <p>PORTFOLIO</p>
+                <h2>Settings</h2>
+            </div>
+
+        </div>
+
+
+        <!-- THEME -->
+
+        <div class="settings-section">
+
+            <h3>🎨 Color Theme</h3>
+
+            <p class="settings-description">
+                Choose your preferred color combination.
+            </p>
+
+
+            <div class="theme-grid">
+
+                <button class="theme-option purple" data-theme="purple">
+                    <span></span>
+                    Purple
+                </button>
+
+                <button class="theme-option blue" data-theme="blue">
+                    <span></span>
+                    Ocean
+                </button>
+
+                <button class="theme-option green" data-theme="green">
+                    <span></span>
+                    Emerald
+                </button>
+
+                <button class="theme-option orange" data-theme="orange">
+                    <span></span>
+                    Sunset
+                </button>
+
+                <button class="theme-option pink" data-theme="pink">
+                    <span></span>
+                    Pink
+                </button>
+
+                <button class="theme-option red" data-theme="red">
+                    <span></span>
+                    Crimson
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- APPEARANCE -->
+
+        <div class="settings-section">
+
+            <h3>🖥 Appearance</h3>
+
+
+            <div class="setting-item">
+
+                <div>
+                    <strong>Dark Mode</strong>
+                    <small>Change the appearance</small>
+                </div>
+
+                <label class="switch">
+
+                    <input type="checkbox" id="darkMode" checked>
+
+                    <span></span>
+
+                </label>
+
+            </div>
+
+
+            <div class="setting-item">
+
+                <div>
+                    <strong>Animations</strong>
+                    <small>Enable smooth animations</small>
+                </div>
+
+                <label class="switch">
+
+                    <input type="checkbox" id="animations" checked>
+
+                    <span></span>
+
+                </label>
+
+            </div>
+
+
+            <div class="setting-item">
+
+                <div>
+                    <strong>Compact Mode</strong>
+                    <small>Reduce spacing between sections</small>
+                </div>
+
+                <label class="switch">
+
+                    <input type="checkbox" id="compactMode">
+
+                    <span></span>
+
+                </label>
+
+            </div>
+
+        </div>
+
+
+        <!-- BOX SETTINGS -->
+
+        <div class="settings-section">
+
+            <h3>📦 Information Boxes</h3>
+
+
+            <div class="setting-item">
+
+                <div>
+                    <strong>One Box at a Time</strong>
+                    <small>Close other boxes automatically</small>
+                </div>
+
+                <label class="switch">
+
+                    <input type="checkbox" id="oneBox">
+
+                    <span></span>
+
+                </label>
+
+            </div>
+
+        </div>
+
+
+        <!-- RESET -->
+
+        <button class="reset-btn" id="resetSettings">
+            ↻ Reset All Settings
+        </button>
+
+    </div>
+
+</div>
+
+
 <script src="script.js"></script>
-</body></html>
+
+</body>
+  </html>
