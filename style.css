@@ -399,7 +399,7 @@ main {
 
     grid-template-columns: repeat(2,1fr);
 
-    gap: 15px;
+    gap: 0px;
 }
 
 .info-box {
