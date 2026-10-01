@@ -3,63 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Portfolio</title>
+    <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<div class="background">
-    <div class="blob blob1"></div>
-    <div class="blob blob2"></div>
-</div>
-
-<header class="top-header">
-
-    <div class="brand">
-        <div class="brand-icon">🍄</div>
-
-        <div>
-            <p class="small-title">Portfolio</p>
-            <h1>Jones Olapani Tuplano</h1>
-        </div>
-    </div>
-
-    <button id="settingsBtn" class="settings-btn">
-        ⚙
-    </button>
-
-</header>
-
-
 <main>
 
-    <!-- Portfolio -->
+    <!-- HERO -->
     <section class="hero">
 
         <div class="hero-text">
 
-            <p class="welcome"></p>
+            <p class="welcome">WELCOME TO MY</p>
 
-            <h2>
-                My 
+            <h1>
+                My
                 <span>Portfolio</span>
-            </h2>
+            </h1>
 
             <p class="hero-description">
-                This portfolio contains some information about myself.
+                This portfolio contains some information about myself,
+                my education, skills, experiences, achievements and projects.
             </p>
 
             <div class="hero-buttons">
-
-                <button class="main-btn" id="aboutBtn">
-                    👤 About Me
-                </button>
-
-                <button class="secondary-btn" id="projectsBtn">
-                    🚀 View Projects
-                </button>
-
+                <a class="main-btn" href="#about">👤 About Me</a>
+                <a class="secondary-btn" href="#projects">🚀 View Projects</a>
             </div>
 
         </div>
@@ -67,20 +38,17 @@
 
         <div class="hero-card">
 
-            <div class="card-decoration">🍁</div>
+           <div class="profile-circle">
+    <img src="image.jpeg" alt="My Profile Picture">
+</div>
 
-            <div class="profile-circle">
-                👨‍💻
-            </div>
-
-            <h3>BSCS student</h3>
+            <h2>BSCS Student</h2>
 
             <p>Student • Learner • Future Programmer</p>
 
             <div class="status">
                 <span></span>
-                <p>Online</p>
-            
+                Online
             </div>
 
         </div>
@@ -88,96 +56,78 @@
     </section>
 
 
-    <!-- About Me -->
-    <section class="section">
+    <!-- ABOUT -->
+    <section class="section" id="about">
 
         <div class="section-heading">
-
-<div class="section-heading">
-
-    <h2>About me</h2>
-</div>
-
+            <h2>About Me</h2>
         </div>
 
 
         <div class="info-grid">
 
-
             <!-- PERSONAL INFORMATION -->
-            <div class="info-box">
+            <div class="info-section">
 
-                <button class="box-header">
+                <div class="section-title">
 
-                    <div class="box-title">
-
-                        <div class="box-icon">👤</div>
-
-                        <div>
-                            <h3>Personal Information</h3>
-                            <p></p>
-                        </div>
-
+                    <div class="section-icon">
+                        👤
                     </div>
 
-                    <span class="plus">+</span>
+                    <div>
+                        <h3>Personal Information</h3>
+                        <p>Basic information about me</p>
+                    </div>
 
-                </button>
+                </div>
 
 
-                <div class="box-content">
+                <div class="details">
 
                     <div class="info-row">
                         <span>Full Name</span>
                         <strong>Jones Olapani Tuplano</strong>
                     </div>
 
-                     <div class="info-row">
+                    <div class="info-row">
                         <span>Address</span>
-                        <strong>Burgos,Viga, Catanduanes</strong>
-                    </div>
-
-                   <div class="info-row">
-                        <span>Birthday</span>
-                        <strong>February 1,2007</strong>
-                    </div>
-
-                 <div class="info-row">
-                        <span>Sex</span>
-                        <strong>Male</strong>
+                        <strong>Burgos, Viga, Catanduanes</strong>
                     </div>
 
                     <div class="info-row">
-                        <span>Age</span>
-                        <strong>19 Years Old</strong>
+                        <span>Birthday</span>
+                        <strong>February 1, 2007</strong>
                     </div>
+
+                    <div class="info-row">
+                        <span>Status</span>
+                        <strong>Single</strong>
+                    </div>
+
                 </div>
 
             </div>
 
 
             <!-- EDUCATION -->
-            <div class="info-box">
+            <div class="info-section">
 
-                <button class="box-header">
+                <div class="section-title">
 
-                    <div class="box-title">
-
-                        <div class="box-icon">🎓</div>
-
-                        <div>
-                            <h3>Education</h3>
-                            <p></p>
-                        </div>
-
+                    <div class="section-icon">
+                        🎓
                     </div>
 
-                    <span class="plus">+</span>
+                    <div>
+                        <h3>Education</h3>
+                        <p>My current education</p>
+                    </div>
 
-                </button>
+                </div>
 
 
-                <div class="box-content">
+                <div class="details">
 
                     <div class="info-row">
                         <span>School</span>
@@ -185,11 +135,6 @@
                     </div>
 
                     <div class="info-row">
-                        <span>School Address</span>
-                        <strong>Calatagan Proper,Virac</strong>
-                    </div>
-
-<div class="info-row">
                         <span>Course</span>
                         <strong>Bachelor of Science in Computer Science</strong>
                     </div>
@@ -204,81 +149,87 @@
             </div>
 
 
-<!--SKILLS-->
-<div class="info-box">
+            <!-- SKILLS -->
+            <div class="info-section">
 
-    <button class="box-header">
+                <div class="section-title">
 
-        <div class="box-title">
+                    <div class="section-icon">
+                        💡
+                    </div>
 
-            <div class="box-icon">💡</div>
+                    <div>
+                        <h3>Skills</h3>
+                        <p>Things I am learning</p>
+                    </div>
 
-            <div>
-                <h3>Skills</h3>
-                <p></p>
+                </div>
+
+
+                <div class="details">
+
+                    <div class="skill">
+                        C
+                    </div>
+
+                    <div class="skill">
+                        C++
+                    </div>
+
+                    <div class="skill">
+                        Object Oriented Programming
+                    </div>
+
+                    <div class="skill">
+                        Basic Web Development
+                    </div>
+
+                </div>
+
             </div>
 
-        </div>
 
-        <span class="plus">+</span>
+            <!-- EXPERIENCES -->
+            <div class="info-section">
 
-    </button>
+                <div class="section-title">
 
-    <div class="box-content">
-            <p>C<br>C++<b><br>OOP</b></p>
-        <!-- Add your skills here later -->
+                    <div class="section-icon">
+                        🧭
+                    </div>
 
-    </div>
+                    <div>
+                        <h3>Experiences</h3>
+                        <p>Some of my experiences</p>
+                    </div>
 
-</div>
-
-            </div>
+                </div>
 
 
-            <!-- Experiences-->
-            <div class="info-box">
+                <div class="details">
 
-                <button class="box-header">
+                    <div class="experience">
 
-                    <div class="box-title">
-
-                        <div class="box-icon">🧭</div>
+                        <span>🏍️</span>
 
                         <div>
-                            <h3>Experiences</h3>
-                            <p></p>
+                            <strong>Motorcycle Crash</strong>
+                            <small>A personal life experience</small>
                         </div>
 
                     </div>
 
-                    <span class="plus">+</span>
 
-                </button>
+                    <div class="experience">
 
-
-                <div class="box-content">
-
-                    <div class="subject">
-                        </span>🏍️</span>
-
-                        <div>
-                            <strong>Motorcycle crash</strong>
-                            <small></small>
-                        </div>
-                    </div>
-
-
-                    <div class="subject">
                         <span>👔</span>
 
                         <div>
-                            <strong>Worked at Municipal Office</strong>
-                            <small></small>
+                            <strong>Municipal Office of Viga</strong>
+                            <small>SPES work experience</small>
                         </div>
+
                     </div>
-
-
-                   
 
                 </div>
 
@@ -286,36 +237,42 @@
 
 
             <!-- ACHIEVEMENTS -->
-            <div class="info-box">
+            <div class="info-section">
 
-                <button class="box-header">
+                <div class="section-title">
 
-                    <div class="box-title">
-
-                        <div class="box-icon">🏆</div>
-
-                        <div>
-                            <h3>Achievements</h3>
-                            <p></p>
-                        </div>
-
+                    <div class="section-icon">
+                        🏆
                     </div>
 
-                    <span class="plus">+</span>
+                    <div>
+                        <h3>Achievements</h3>
+                        <p>Things I have accomplished</p>
+                    </div>
 
-                </button>
+                </div>
 
 
-                <div class="box-content">
+                <div class="details">
 
                     <div class="achievement">
 
                         <span>🏆</span>
 
-                        <div>
-                            <strong>Passed 1st Year in BSCS</strong>
-                            </small></small>
-                        </div>
+                        <strong>
+                            Passed 1st Year in BSCS
+                        </strong>
+
+                    </div>
+
+
+                    <div class="achievement">
+
+                        <span>🎓</span>
+
+                        <strong>
+                            Graduated High School
+                        </strong>
 
                     </div>
 
@@ -324,10 +281,9 @@
 
                         <span>⭐</span>
 
-                        <div>
-                            <strong>Game Achievements</strong>
-                            <small>Reach Glory in MLBB <br>100% Stardew Valley Community Route<br>Beaten Terraria getfixedboi seed and 100% Bestiary</small>
-                        </div>
+                        <strong>
+                            Completed NSTP Training
+                        </strong>
 
                     </div>
 
@@ -337,47 +293,35 @@
 
 
             <!-- CONTACT -->
-            <div class="info-box">
+            <div class="info-section" id="contact">
 
-                <button class="box-header">
+                <div class="section-title">
 
-                    <div class="box-title">
-
-                        <div class="box-icon">📩</div>
-
-                        <div>
-                            <h3>Contact & Inquiries</h3>
-                            <p></p>
-                        </div>
-
+                    <div class="section-icon">
+                        📩
                     </div>
 
-                    <span class="plus">+</span>
+                    <div>
+                        <h3>Contact & Inquiries</h3>
+                        <p>Ways to contact me</p>
+                    </div>
 
-                </button>
+                </div>
 
 
-                <div class="box-content contact-content">
+                <div class="details">
 
                     <div class="contact-item">
 
-                        <div class="contact-symbol">📧</div>
-
-                        <div>
-                            <small>Gmail</small>
-                            <strong>jonestuplano8@gmail.com</strong>
+                        <div class="contact-symbol">
+                            📧
                         </div>
 
-                    </div>
-
-
-                    <div class="contact-item">
-
-                        <div class="contact-symbol">📱</div>
-
                         <div>
-                            <small>Phone</small>
-                            <strong>09074525924</strong>
+                            <small>Email</small>
+                            <strong>
+                                jonestuplano8@gmail.com
+                            </strong>
                         </div>
 
                     </div>
@@ -385,23 +329,15 @@
 
                     <div class="contact-item">
 
-                        <div class="contact-symbol">📘</div>
-
-                        <div>
-                            <small>Facebook</small>
-                            <strong>Jones O. Tupano</strong>
+                        <div class="contact-symbol">
+                            📍
                         </div>
-
-                    </div>
-
-
-                    <div class="contact-item">
-
-                        <div class="contact-symbol">📍</div>
 
                         <div>
                             <small>Location</small>
-                            <strong>Varies everyday</strong>
+                            <strong>
+                                Catanduanes, Philippines
+                            </strong>
                         </div>
 
                     </div>
@@ -409,8 +345,7 @@
 
                     <div class="inquiry-message">
                         For inquiries, projects, collaborations,
-                        or questions, feel free to contact me
-                        through any of the information above.Pls don't
+                        or questions, feel free to contact me.
                     </div>
 
                 </div>
@@ -426,35 +361,54 @@
     <section class="projects-section" id="projects">
 
         <div class="section-heading">
-
-            <div>
-                <p class="section-label"></p></p>
-                <h2>Projects</h2>
-            </div>
-
+            <h2>Projects</h2>
         </div>
 
 
         <div class="projects-grid">
 
-            <div class="project-card">
-                <div class="project-icon">💻</div>
+            <div class="project">
+
+                <div class="project-icon">
+                    💻
+                </div>
+
                 <h3>Project 1</h3>
-                <p>Portfolio</p>
+
+                <p>
+                    Creating my own website about me.
+                </p>
+
             </div>
 
 
-            <div class="project-card">
-                <div class="project-icon">🎮</div>
+            <div class="project">
+
+                <div class="project-icon">
+                    🎮
+                </div>
+
                 <h3>Project 2</h3>
-                <p>Probably Game</p>
+
+                <p>
+                  NA
+                </p>
+
             </div>
 
 
-            <div class="project-card">
-                <div class="project-icon">❔</div>
+            <div class="project">
+
+                <div class="project-icon">
+                    ❔
+                </div>
+
                 <h3>Project 3</h3>
-                <p>NA</p>
+
+                <p>
+                   NA
+                </p>
+
             </div>
 
         </div>
@@ -462,12 +416,14 @@
     </section>
 
 
-    <!-- CONTACT -->
+    <!-- CONTACT CTA -->
     <section class="contact-cta">
 
         <div>
 
-            <p class="section-label">HAVE A QUESTION?</p>
+            <p class="section-label">
+                HAVE A QUESTION?
+            </p>
 
             <h2>Let's Connect</h2>
 
@@ -478,9 +434,10 @@
 
         </div>
 
-        <button id="contactBtn" class="main-btn">
+
+        <a href="#contact" class="main-btn">
             📩 Contact Me
-        </button>
+        </a>
 
     </section>
 
@@ -489,186 +446,11 @@
 
 <footer>
 
-    <p>© 2026 Tuplano </p>
+    <p>© 2026 Tuplano</p>
 
-    <p>Piracy is prohibited</p>
+    <p>Portfolio Website</p>
 
 </footer>
 
-
-<!-- SETTINGS -->
-
-<div class="settings-overlay" id="settingsOverlay">
-
-    <div class="settings-panel">
-
-        <button class="close-settings" id="closeSettings">
-            ×
-        </button>
-
-
-        <div class="settings-title">
-
-            <span>⚙</span>
-
-            <div>
-                <p>PORTFOLIO</p>
-                <h2>Settings</h2>
-            </div>
-
-        </div>
-
-
-        <!-- THEME -->
-
-        <div class="settings-section">
-
-            <h3>🎨 Color Theme</h3>
-
-            <p class="settings-description">
-                Choose your preferred color combination.
-            </p>
-
-
-            <div class="theme-grid">
-
-                <button class="theme-option purple" data-theme="purple">
-                    <span></span>
-                    Purple
-                </button>
-
-                <button class="theme-option blue" data-theme="blue">
-                    <span></span>
-                    Ocean
-                </button>
-
-                <button class="theme-option green" data-theme="green">
-                    <span></span>
-                    Emerald
-                </button>
-
-                <button class="theme-option orange" data-theme="orange">
-                    <span></span>
-                    Sunset
-                </button>
-
-                <button class="theme-option pink" data-theme="pink">
-                    <span></span>
-                    Pink
-                </button>
-
-                <button class="theme-option red" data-theme="red">
-                    <span></span>
-                    Crimson
-                </button>
-
-            </div>
-
-        </div>
-
-
-        <!-- APPEARANCE -->
-
-        <div class="settings-section">
-
-            <h3>🖥 Appearance</h3>
-
-
-            <div class="setting-item">
-
-                <div>
-                    <strong>Dark Mode</strong>
-                    <small>Change the appearance</small>
-                </div>
-
-                <label class="switch">
-
-                    <input type="checkbox" id="darkMode" checked>
-
-                    <span></span>
-
-                </label>
-
-            </div>
-
-
-            <div class="setting-item">
-
-                <div>
-                    <strong>Animations</strong>
-                    <small>Enable smooth animations</small>
-                </div>
-
-                <label class="switch">
-
-                    <input type="checkbox" id="animations" checked>
-
-                    <span></span>
-
-                </label>
-
-            </div>
-
-
-            <div class="setting-item">
-
-                <div>
-                    <strong>Compact Mode</strong>
-                    <small>Reduce spacing between sections</small>
-                </div>
-
-                <label class="switch">
-
-                    <input type="checkbox" id="compactMode">
-
-                    <span></span>
-
-                </label>
-
-            </div>
-
-        </div>
-
-
-        <!-- BOX SETTINGS -->
-
-        <div class="settings-section">
-
-            <h3>📦 Information Boxes</h3>
-
-
-            <div class="setting-item">
-
-                <div>
-                    <strong>One Box at a Time</strong>
-                    <small>Close other boxes automatically</small>
-                </div>
-
-                <label class="switch">
-
-                    <input type="checkbox" id="oneBox">
-
-                    <span></span>
-
-                </label>
-
-            </div>
-
-        </div>
-
-
-        <!-- RESET -->
-
-        <button class="reset-btn" id="resetSettings">
-            ↻ Reset All Settings
-        </button>
-
-    </div>
-
-</div>
-
-
-<script src="script.js"></script>
-
 </body>
-                        </html>
+                            </html>
